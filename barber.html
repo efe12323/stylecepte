@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <title>Kuaför Katılımı - stylecepte</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>✂️ Kuaför Olarak Katıl</h1>
   </header>
   <section>
-    <p>Burada kuaför başvuru formu olacak (örnek sayfa).</p>
+    <form id="barberForm">
+      <input type="text" name="name" placeholder="İsminiz" required><br><br>
+      <input type="text" name="salon" placeholder="Salon Adı" required><br><br>
+      <input type="tel" name="phone" placeholder="Telefon" required><br><br>
+      <input type="text" name="address" placeholder="Adres" required><br><br>
+      <input type="number" name="discount" placeholder="Öğrenci İndirimi (%)" min="5" max="50" required><br><br>
+      <button type="submit" class="btn">Kaydol</button>
+    </form>
+    <p id="barberMsg"></p>
     <a href="index.html" class="btn">⬅ Ana Sayfaya Dön</a>
   </section>
 </body>
