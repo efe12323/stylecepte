@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <title>Öğrenci Katılımı - stylecepte</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>🎓 Öğrenci Olarak Katıl</h1>
   </header>
   <section>
-    <p>Burada öğrenci kayıt formu olacak (örnek sayfa).</p>
+    <form id="studentForm">
+      <input type="text" name="firstName" placeholder="Adınız" required><br><br>
+      <input type="text" name="lastName" placeholder="Soyadınız" required><br><br>
+      <input type="email" name="email" placeholder="E-posta" required><br><br>
+      <input type="text" name="school" placeholder="Okulunuz" required><br><br>
+      <input type="text" name="studentID" placeholder="Öğrenci Kimliği" required><br><br>
+      <button type="submit" class="btn">Kaydol</button>
+    </form>
+    <p id="studentMsg"></p>
     <a href="index.html" class="btn">⬅ Ana Sayfaya Dön</a>
   </section>
 </body>
