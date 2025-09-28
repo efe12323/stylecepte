@@ -1,4 +1,3 @@
-/* Genel Stil */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,34 +6,30 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
-header {
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home-header {
   background: linear-gradient(135deg, #ff6b81, #ff9671);
   color: #fff;
   text-align: center;
   padding: 60px 20px;
 }
 
-header .site-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #fff;
-  letter-spacing: 2px;
-}
-
-header h1 {
+.home-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-header p {
+.home-header p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Butonlar */
-.btn {
+.home-header .btn {
   display: inline-block;
   margin: 10px;
   padding: 12px 24px;
@@ -46,57 +41,39 @@ header p {
   transition: 0.3s;
 }
 
-.btn:hover {
+.home-header .btn:hover {
   background: #ffe6ea;
 }
 
-/* Harita Alanı */
-#mapSection {
+.home-section {
   padding: 50px 20px;
   text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
 
-#mapSection h2 {
+.home-section h2 {
   color: #ff6b81;
   margin-bottom: 20px;
 }
 
-/* Kuaför Listesi */
-.barber-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 30px 20px;
+.home-section ul {
+  list-style: none;
+  padding: 0;
 }
 
-.card {
+.home-section ul li {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: #ff6b81;
+  color: #fff;
   text-align: center;
-  transition: transform 0.3s;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  margin: 15px 0 5px 0;
-  color: #ff6b81;
-}
-
-.card p {
-  margin: 5px 0;
-}
-
-.card .btn {
-  margin: 15px 0 20px 0;
-}
-
-.card:hover {
-  transform: scale(1.03);
+  padding: 30px 20px;
+  margin-top: 40px;
 }
